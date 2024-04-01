@@ -1,0 +1,48 @@
+/* Define root colors */
+:root{
+    --main-color:#00d6c6;
+    --secondary-color: #2c3e50;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+/* Importante */
+
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainheader{
+    padding: 50px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.mainheader nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainheader nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.mainheader nav ul li a{
+    text-decoration: none;
+    color: white;
+}
