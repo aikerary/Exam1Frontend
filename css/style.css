@@ -1,299 +1,346 @@
 /* Define root colors */
-:root{
-    --main-color:#00d6c6;
-    --secondary-color: #465dc9;
+:root {
+  --main-color: #00d6c6;
+  --secondary-color: #465dc9;
+  --graysas: #f5f5f5;
+  --graydark: #dcdcdc;
 }
 
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-body{
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainheader {
+  padding: 40px 0;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.mainheader nav {
+  margin-left: 400px;
+}
+
+.mainheader nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainheader nav ul li {
+  list-style: none;
+  margin: 0 30px;
+}
+
+.mainheader nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+.mainheader .btnheader {
+  margin-right: 50px;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-bottom: 2px solid;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.mainheader .title {
+  margin-left: 50px;
+  color: white;
+  font-size: 2.3em;
+  font-weight: bolder;
+  /* Change the spacing */
+  letter-spacing: 0px;
+}
+
+.mainheader .title::after {
+  font-family: "iconitos";
+  /* Set as content this e9ca */
+  content: "\e9ca";
+  margin-left: 10px;
+}
+
+.banner {
+  padding: 200px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../images/BannerComplete.png);
+  background-size: cover;
+  margin-bottom: 150px;
+}
+
+.banner img {
+  width: 800px;
+}
+
+.left-banner {
+  margin-left: 100px;
+  width: 40%;
+}
+
+.left-banner h1 {
+  font-size: 4.7em;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  /* Do a red gradient as color */
+  background: linear-gradient(90deg, #ff874f, #ff0064);
+  /* Set the background clip as text */
+  background-clip: text;
+  color: transparent;
+  padding-top: 50px;
+  border-top: 1px solid lightgray;
+}
+
+.left-banner .params {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.left-banner .params .param > * {
+  margin-top: 20px;
+}
+
+.left-banner .params .param h2 {
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+
+.left-banner .params .param p {
+  font-size: 1.2em;
+}
+
+.left-banner button {
+  margin-top: 20px;
+  padding: 20px 40px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-bottom: 2px solid var(--secondary-color);
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.right-banner {
+  margin-right: 70px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.first {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 70px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.first .one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.first .one h2 {
+  padding: 40px 40px;
+  padding-top: 200px;
+  font-size: 1.6em;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.first .one h2::before {
+  font-family: "iconitos";
+  content: "\e9ca";
+  font-size: 3em;
+  position: absolute;
+  transform: translate(0, -150px);
+}
+
+.first .one #one1::before {
+  font-family: "iconitos";
+  content: "\e972";
+  position: absolute;
+  transform: translate(40px, -150px);
+}
+
+.first .one #one2::before {
+  font-family: "iconitos";
+  content: "\e926";
+  position: absolute;
+  transform: translate(100px, -150px);
+}
+
+.first .one #one3::before {
+  font-family: "iconitos";
+  content: "\e972";
+  position: absolute;
+  transform: translate(70px, -150px);
+}
+
+.first .one #one4::before {
+  font-family: "iconitos";
+  content: "\e926";
+  position: absolute;
+  transform: translate(100px, -150px);
+}
+
+.first .one::before {
+  width: 160px;
+  height: 100px;
+  content: "";
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 2.5em;
+  color: white;
+  transform: translate(0, -270px);
+}
+
+.first #first1::before {
+  background-image: url(../images/features-number-01.png);
+  background-size: cover;
+  content: "01";
+}
+
+.first #first2::before {
+  background-image: url(../images/features-number-02.png);
+  background-size: cover;
+  content: "02";
+  height: 105px;
+}
+
+.first #first3::before {
+  background-image: url(../images/features-number-03.png);
+  background-size: cover;
+  content: "03";
+  height: 105px;
+}
+
+.first #first4::before {
+  background-image: url(../images/features-number-04.png);
+  background-size: cover;
+  content: "04";
+  width: 175px;
+  height: 105px;
+}
+
+.first .one p {
+  font-size: 1.2em;
+  text-align: center;
+  /* Set one border top with the 75% of the widht */
+  border-top: 2px solid lightgray;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.second {
+  display: flex;
+  /* Quitar */
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 80px 0;
+  background-color: var(--graysas);
+  flex-wrap: wrap;
+  gap: 250px;
+  border-radius: 70px;
+  padding-top: 300px;
+  transform: translate(0, -200px);
+  z-index: 1;
+}
+
+.second .progress{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background:var(--graydark) linear-gradient(to right, transparent 50%, var(--clr) 0);
+}
+
+.second .progress .progress-content{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.mainheader{
-    padding: 40px 0;
-    background-color: var(--main-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-}
-
-.mainheader nav{
-    margin-left:400px;
-}
-
-.mainheader nav ul{
-    display: flex;
-    justify-content: space-between;
-}
-
-.mainheader nav ul li{
-    list-style: none;
-    margin: 0 30px;
-}
-
-.mainheader nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-}
-
-.mainheader .btnheader{
-    margin-right: 50px;
-    padding: 10px 20px;
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    border-bottom: 2px solid ;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1.2em;
-}
-
-.mainheader .title{
-    margin-left: 50px;
-    color: white;
-    font-size: 2.3em;
-    font-weight: bolder;
-    /* Change the spacing */
-    letter-spacing: 0px;
-}
-
-.mainheader .title::after{
-    font-family: 'iconitos';
-    /* Set as content this e9ca */
-    content: '\e9ca';
-    margin-left: 10px;
-}
-
-.banner{
-    padding: 200px 0;
-    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url(../images/BannerComplete.png);
-    background-size: cover;
-    margin-bottom: 150px;
 }
 
-.banner img{
-    width:800px;
-}
-
-.left-banner{
-    margin-left: 100px;
-    width: 40%;
-}
-
-.left-banner h1{
-    font-size: 4.7em;
-    font-weight: bolder;
-    margin-bottom: 20px;
-    /* Do a red gradient as color */
-    background: linear-gradient(90deg,#ff874f, #ff0064 );
-    /* Set the background clip as text */
-    background-clip: text;
-    color: transparent;
-    padding-top: 50px;
-    border-top: 1px solid lightgray;
-}
-
-.left-banner .params{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-
-.left-banner .params .param>*{
-    margin-top: 20px;
-}
-
-.left-banner .params .param h2{
-    font-size: 1.6em;
-    font-weight: bolder;
-}
-
-.left-banner .params .param p{
-    font-size: 1.2em;
-}
-
-.left-banner button{
-    margin-top: 20px;
-    padding: 20px 40px;
-    background-color: var(--main-color);
-    color: white;
-    border: none;
-    border-bottom: 2px solid var(--secondary-color);
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 1.2em;
-}
-
-.right-banner{
-    margin-right: 70px;
-}
-
-.icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.first{
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    border-radius: 70px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
-
-.first .one{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 40px;
-}
-
-.first .one h2{
-    padding: 40px 40px;
-    padding-top: 200px;
-    font-size: 1.6em;
-    font-weight: bolder;
-    margin-bottom: 20px;
+.second .progress h3{
     text-align: center;
-    padding-bottom: 40px;
+    font-weight: 600;
+    font-size: 2.4em;
+}
+
+.second .progress h4{
     width: 100%;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.first .one h2::before{
-    font-family: 'iconitos';
-    content: '\e9ca';
-    font-size: 3em;
-    position: absolute;
-    transform: translate(0, -150px);
+.second .progress::before{
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
 }
 
-.first .one #one1::before{
-    font-family: 'iconitos';
-    content: '\e972';
-    position: absolute;
-    transform: translate(40px, -150px);
-}
-
-.first .one #one2::before{
-    font-family: 'iconitos';
-    content: '\e926';
-    position: absolute;
-    transform: translate(100px, -150px);
-}
-
-.first .one #one3::before{
-    font-family: 'iconitos';
-    content: '\e972';
-    position: absolute;
-    transform: translate(70px, -150px);
-}
-
-.first .one #one4::before{
-    font-family: 'iconitos';
-    content: '\e926';
-    position: absolute;
-    transform: translate(100px, -150px);
-}
-
-.first .one::before{
-    width: 160px;
-    height: 100px;
+.second .progress::after{
     content: "";
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
-    font-size: 2.5em;
-    color: white;
-    transform: translate(0, -270px);
-}
-
-.first #first1::before{
-    background-image: url(../images/features-number-01.png);
-    background-size: cover;
-    content: "01";
-}
-
-.first #first2::before{
-    background-image: url(../images/features-number-02.png);
-    background-size: cover;
-    content: "02";
-    height: 105px;
-}
-
-.first #first3::before{
-    background-image: url(../images/features-number-03.png);
-    background-size: cover;
-    content: "03";
-    height: 105px;
-}
-
-.first #first4::before{
-    background-image: url(../images/features-number-04.png);
-    background-size: cover;
-    content: "04";
-    width: 175px;
-    height: 105px;
-}
-
-.first .one p{
-    font-size: 1.2em;
-    text-align: center;
-    /* Set one border top with the 75% of the widht */
-    border-top: 2px solid lightgray;
-    padding-top: 40px;
-    padding-bottom: 30px;
-}
-
-.second{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-}
-
-.progress-bar {
-    font-size: 20px;
-    margin: 20px;
-    position: relative; /* so that children can be absolutely positioned */
-    padding: 0;
-    width: 5em;
-    height: 5em;
-    background-color: #F2E9E1; 
+    inset: 7px;
     border-radius: 50%;
-    line-height: 5em;
-    float: left;
-  }
-
-  .progress-bar:after{
-    border: none;
-    position: absolute;
-    top: 0.35em;
-    left: 0.35em;
-    text-align: center;
-    display: block;
-    border-radius: 50%;
-    width: 4.3em;
-    height: 4.3em;
-    background-color: white;
-    content: " ";
+    background-color: var(--graysas);
 }
+
+.second .progress::before{
+    background: var(--clr);
+    transform: rotate(calc((var(--i) - 50) * 0.01turn ));
+}
+
