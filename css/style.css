@@ -22,6 +22,7 @@ header{
     flex-direction: column;
     align-items: center;
 }
+/*  */
 
 .mainheader{
     padding: 40px 0;
@@ -78,4 +79,16 @@ header{
     /* Set as content this e9ca */
     content: '\e9ca';
     margin-left: 20px;
+}
+
+.banner{
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner img{
+    width: 700px;
 }
