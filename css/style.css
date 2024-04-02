@@ -12,17 +12,9 @@
 body{
     display: flex;
     justify-content: center;
-}
-
-/* Importante */
-
-header{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
 }
-/*  */
 
 .mainheader{
     padding: 40px 0;
@@ -82,15 +74,18 @@ header{
 }
 
 .banner{
-    margin-top: 200px;
+    padding: 200px 0;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    background-image: url(../images/BannerComplete.png);
+    background-size: cover;
+    margin-bottom: 150px;
 }
 
 .banner img{
-    width: 700px;
+    width:800px;
 }
 
 .left-banner{
@@ -140,4 +135,86 @@ header{
     border-radius: 50px;
     cursor: pointer;
     font-size: 1.2em;
+}
+
+.right-banner{
+    margin-right: 70px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    border-radius: 70px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.first .one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.first .one h2{
+    padding: 40px 40px;
+    padding-top: 200px;
+    font-size: 1.6em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.first .one h2::before{
+    font-family: 'iconitos';
+    content: '\e9ca';
+    font-size: 3em;
+    position: absolute;
+    transform: translate(0, -150px);
+}
+
+.first .one #one1::before{
+    font-family: 'iconitos';
+    content: '\e972';
+    position: absolute;
+    transform: translate(40px, -150px);
+}
+
+.first .one #one2::before{
+    font-family: 'iconitos';
+    content: '\e926';
+    position: absolute;
+    transform: translate(100px, -150px);
+}
+
+.first .one #one3::before{
+    font-family: 'iconitos';
+    content: '\e972';
+    position: absolute;
+    transform: translate(70px, -150px);
+}
+
+.first .one #one4::before{
+    font-family: 'iconitos';
+    content: '\e926';
+    position: absolute;
+    transform: translate(100px, -150px);
+}
+
+.first .one p{
+    font-size: 1.2em;
+    text-align: center;
+    /* Set one border top with the 75% of the widht */
+    border-top: 2px solid lightgray;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
