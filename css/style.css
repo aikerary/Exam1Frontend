@@ -272,20 +272,28 @@ body{
 }
 
 .progress-bar {
-    width: 200px;
-    height: 200px;
-    background-color: #f3f3f3;
+    font-size: 20px;
+    margin: 20px;
+    position: relative; /* so that children can be absolutely positioned */
+    padding: 0;
+    width: 5em;
+    height: 5em;
+    background-color: #F2E9E1; 
     border-radius: 50%;
-    position: relative;
+    line-height: 5em;
+    float: left;
   }
 
-  .progress-bar::before {
-    content: "";
+  .progress-bar:after{
+    border: none;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #3498db;
+    top: 0.35em;
+    left: 0.35em;
+    text-align: center;
+    display: block;
     border-radius: 50%;
-  }
+    width: 4.3em;
+    height: 4.3em;
+    background-color: white;
+    content: " ";
+}
