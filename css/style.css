@@ -78,7 +78,7 @@ header{
     font-family: 'iconitos';
     /* Set as content this e9ca */
     content: '\e9ca';
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .banner{
@@ -91,4 +91,20 @@ header{
 
 .banner img{
     width: 700px;
+}
+
+.left-banner{
+    margin-left: 100px;
+    width: 40%;
+}
+
+.left-banner h1{
+    font-size: 4.7em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    /* Do a red gradient as color */
+    background: linear-gradient(90deg,#ff874f, #ff0064 );
+    /* Set the background clip as text */
+    background-clip: text;
+    color: transparent;
 }
