@@ -82,7 +82,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-image: url(../images/BannerComplete.png);
-  background-size: cover;
+  background-size: 100% 99.99%;
   margin-bottom: 150px;
 }
 
@@ -148,6 +148,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 0;
 }
 
 .first {
@@ -283,6 +284,7 @@ body {
   border-radius: 70px;
   padding-top: 300px;
   transform: translate(0, -200px);
+  margin-bottom: -200px;
   z-index: 1;
 }
 
@@ -342,5 +344,23 @@ body {
 .second .progress::before{
     background: var(--clr);
     transform: rotate(calc((var(--i) - 50) * 0.01turn ));
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    gap:20px;
+}
+
+.footer h2{
+    font-size:1.2em;
+    font-weight: 100;
+}
+
+.footer h2 span{
+    color: var(--main-color);
 }
 
