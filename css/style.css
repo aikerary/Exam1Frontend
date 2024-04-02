@@ -152,7 +152,7 @@ body{
     width: 90%;
     justify-content: space-between;
     border-radius: 70px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 .first .one{
@@ -208,6 +208,49 @@ body{
     content: '\e926';
     position: absolute;
     transform: translate(100px, -150px);
+}
+
+.first .one::before{
+    width: 160px;
+    height: 100px;
+    content: "";
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: white;
+    transform: translate(0, -270px);
+}
+
+.first #first1::before{
+    background-image: url(../images/features-number-01.png);
+    background-size: cover;
+    content: "01";
+}
+
+.first #first2::before{
+    background-image: url(../images/features-number-02.png);
+    background-size: cover;
+    content: "02";
+    height: 105px;
+}
+
+.first #first3::before{
+    background-image: url(../images/features-number-03.png);
+    background-size: cover;
+    content: "03";
+    height: 105px;
+}
+
+.first #first4::before{
+    background-image: url(../images/features-number-04.png);
+    background-size: cover;
+    content: "04";
+    width: 175px;
+    height: 105px;
 }
 
 .first .one p{
