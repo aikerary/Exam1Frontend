@@ -145,6 +145,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .first{
@@ -261,3 +262,30 @@ body{
     padding-top: 40px;
     padding-bottom: 30px;
 }
+
+.second{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 200px;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .progress-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 50%;
+  }
